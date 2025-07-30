@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(lldb) Build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false, // 在 VS Code 的集成终端中显示输出
+            "MIMode": "lldb",
+            "preLaunchTask": "C/C++: clang++ build active file" // <-- 关键！
+        }
+    ]
+}
